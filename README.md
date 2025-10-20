@@ -11,6 +11,7 @@ Found the gateway exposing HTTP/HTTPS/UPnP and several hosts with SMB/RTSP servi
 ```bash
 nmap -sS 192.168.xx.0/XX
 nmap -sS 192.168.xx.0/XX -oN scan_results.txt
+```
 
 ## Key Findings 
  192.168.xx.x (gateway): 80/tcp (http), 443/tcp (https), 1900/tcp (upnp), 8080/tcp, 8443/tcp — gateway web/management services exposed.
@@ -22,3 +23,8 @@ nmap -sS 192.168.xx.0/XX -oN scan_results.txt
 ├── README.md
 ├── scan_results.txt        # CMD Nmap output (from -oN) (REDACTED MACs AND IP ADDRESSES AS THEY WERE PERSONAL)
 ├── TCP SYN Scan.jpg        # terminal screenshot (REDACTED MACs AND IP ADDRESSES AS THEY WERE PERSONAL)
+
+##Wireshark Analysis
+I attempted to capture and analyze packets using Wireshark during the Nmap TCP SYN scan.
+While I successfully captured network traffic, I wasn’t able to interpret or filter the packets effectively this time.
+I plan to revisit Wireshark with proper filters.
