@@ -20,9 +20,10 @@ nmap -sS 192.168.xx.0/XX -oN scan_results.txt
  192.168.xx.xxx: No open ports found in the scanned set.
 
 ## Repo Contents
-├── README.md
-├── scan_results.txt        # CMD Nmap output (from -oN) (REDACTED MACs AND IP ADDRESSES AS THEY WERE PERSONAL)
-├── TCP SYN Scan.jpg        # terminal screenshot (REDACTED MACs AND IP ADDRESSES AS THEY WERE PERSONAL)
+Port-Scan-Nmap
+ ├── README.md
+ ├── scan_results.txt        # CMD Nmap output (from -oN) (REDACTED MACs AND IP ADDRESSES AS THEY WERE PERSONAL)
+ ├── TCP SYN Scan.jpg        # terminal screenshot (REDACTED MACs AND IP ADDRESSES AS THEY WERE PERSONAL)
 
 ##Wireshark Analysis
 I attempted to capture and analyze packets using Wireshark during the Nmap TCP SYN scan.
